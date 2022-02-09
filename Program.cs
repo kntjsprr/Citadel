@@ -12,13 +12,6 @@ namespace Citadel
         static async Task Main(string[] args)
         {
 
-
-            /*   Citadel Arguments:
-             * .exe <fullPath>   <savePath>    <-e (encrypt) -d (decrypt)>   <pass key>   <extension file> >
-             * 
-             * FileTransformer.exe "%temp%\\file.exe" "%temp%\\transformedfile.exe" -e password7737 exe
-             */
-
             #region Initializing Variables
 
             string encryptionKey, extension;
@@ -29,13 +22,8 @@ namespace Citadel
             #endregion
             Console.ForegroundColor = ConsoleColor.Green;
 
-            /*       Other variable used 
-             *       
-             * filePath and fileName used to split fullPath 
-             * 
-             * conversionMode = FileTransformer.Mode.Transform or FileTransformer.Mode.Restore 
-             * (Transform is to encrypt and Restore is to decrypt). This variable is used to parse -e & -d cmd args. ;
-             * 
+             /*       Other variable used      
+             * filePath and fileName used to split fullPath (Currently not used. Initially created to implement predetermined filenames.)
              */
 
 
