@@ -30,7 +30,7 @@ Extension file = ".enc"
 - File names are randomized and they will be printed on the cli. I might add a feature to use a predetermined file names.
 
 ## Screenshots
-
+https://raw.githubusercontent.com/kntjspr/Citadel/main/Github/Screenshot%202022-02-10%20073809.png
 
 ## Troubleshoot
 For runtime problems install [.NET 5.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) 
