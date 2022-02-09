@@ -29,6 +29,9 @@ Extension file = ".enc"
 ## Other Info
 - File names are randomized and they will be printed on the cli. I might add a feature to use a predetermined file names.
 
+## Screenshots
+
+
 ## Troubleshoot
 For runtime problems install [.NET 5.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) 
 and if you want to modify the source you must install .NET 5.0 SDK
