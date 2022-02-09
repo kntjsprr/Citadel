@@ -16,6 +16,7 @@ Citadel.exe [file you wish to encrypt/decrypt]  [path to the directory in which 
 
 Example:
 Citadel.exe "%temp%\\file.exe" "%temp%" -e password7737 encfile
+
 The encrypted file will be stored as .encfile in the%temp% folder and will print the filename on the cli. 
 
 ## Default Values
