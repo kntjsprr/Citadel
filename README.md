@@ -1,9 +1,10 @@
 # Citadel
-A simple command-line utility for encrypting files with the AES-256-GCM algorithm and then converting them to base64 format without . 
+A simple command-line utility for encrypting files with the AES-256-GCM algorithm and then converting them to base64 format. 
+
 # Features
 - Encrypt any file using AES-256-GCM algorithm and then encoding it into a base64 format.
 - The original filename is included in the encrypted file and may be changed without affecting the original file. 
-
+- Everything can be done using args! You can integrate this using your own app easily using cmd.
 
 
 ## How to use
@@ -14,8 +15,8 @@ This tool doesn't need any user interaction on the CLI (like console.read). You'
 Citadel.exe [file you wish to encrypt/decrypt]  [path to the directory in which the result will be saved] [-e/-d (encrypt/decrypt)] [password (optional)] [extension file (optional)]
 
 Example:
-Citadel.exe "%temp%\\file.exe" "%temp%" -e password7737 exe
-The encrypted file will be saved as .exe on %temp% folder
+Citadel.exe "%temp%\\file.exe" "%temp%" -e password7737 encfile
+The encrypted file will be stored as .encfile in the%temp% folder and will print the filename on the cli. 
 
 ## Default Values
 The last two arguments are optional.
