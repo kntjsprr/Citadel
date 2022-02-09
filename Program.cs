@@ -129,7 +129,7 @@ namespace Citadel
                 task = Task.Run(() => ft.TransformFile(fullPath, savePath, extension));
             }
             else
-            {  // (conversionMode == FileTransformer.Mode.Restore)
+            {  // (conversionMode == CitadelMain.Mode.Restore)
                 task = Task.Run(() => ft.RestoreFile(fullPath, savePath));
 
             }
