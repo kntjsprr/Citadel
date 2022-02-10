@@ -24,7 +24,7 @@ namespace Citadel
              * filePath and fileName used to split fullPath (Currently not used. Initially created to implement predetermined filenames.)
              * Length starts with 1 but array start with 0  */
 
-            if (args.Length <= 0) //No argument {
+            if (args.Length <= 0) {//No argument
                 Console.WriteLine("No arguments are entered. Use -h for help.");
                 return;
             } else if (args[0] == "-h") {
