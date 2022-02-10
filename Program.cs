@@ -51,10 +51,10 @@ namespace Citadel
                 return;
             }
 
-            if (args.Length < 0){ //If equl or more than 0 which means it only contains first argument args[0]
+            if (args.Length < 2){ //If equl or more than 0 which means it only contains first argument args[0]
                 Console.WriteLine("No path to save. Use -h to help");
                 return;
-            } else if (args.Length < 1) { 
+            } else if (args.Length < 3) { 
                 Console.WriteLine("No command specified whether to encrypt or decrypt. Use -h for help.");
                 return;
             }
