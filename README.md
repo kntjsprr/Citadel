@@ -17,12 +17,19 @@ This tool doesn't need any user interaction on the CLI (like console.read). You'
 
 ## Arguments
 
-Citadel.exe [file you wish to encrypt/decrypt]  [path to the directory in which the result will be saved] [-e/-d (encrypt/decrypt)] [password (optional)] [File Extension (optional)]
+Citadel.exe [file you wish to encrypt/decrypt]  [path to the directory in which the result will be saved] [-e/-d (encrypt/decrypt)] [password (optional)] [File Extension (Optional)] 
 
-Example:
-Citadel.exe "%temp%\\file.exe" "%temp%" -e password7737 encfile
+- File Extension argument are ignored for -d/decrypt args since the original filename will be used
 
-The encrypted file will be stored as .encfile in the%temp% folder and will print the filename on the cli. 
+### Encrypting File Example:
+Citadel.exe C:\DecryptedFolder\file.exe C:\EncryptedFolder -e password7737 cit
+
+Output sample: C:\EncryptedFolder\dbcsiwpqen.cit
+
+### Decrypting File Example:
+Citadel.exe C:\EncryptedFolder\dbcsiwpqen.cit C:\DecryptedFolder -d password7737
+
+Output sample: C:\DecryptedFolder\file.exe
 
 ## Default Values
 The last two arguments are optional.
