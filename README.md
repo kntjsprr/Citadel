@@ -2,7 +2,7 @@
 A simple command-line utility for encrypting files using the AES-256-GCM algorithm and then converting them into a base64 format. 
 
 ## Features
-- Encrypt any file using AES-256-GCM algorithm and then encoding it into a base64 format.
+- Encrypt any file using the AES-256-GCM algorithm and then encoding it into a base64 format.
 - The original filename is included in the encrypted file and may be changed without affecting the original file. 
 - Everything can be done using args! You can integrate this using your own app easily using cmd.
 
