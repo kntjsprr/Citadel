@@ -19,12 +19,12 @@ This tool doesn't need any user interaction on the CLI (like console.read). You'
 
 Citadel.exe [file you wish to encrypt/decrypt]  [path to the directory in which the result will be saved] [-e/-d (encrypt/decrypt)] [password (optional)] [File Extension (Optional)] 
 
-- File Extension argument are ignored for -d/decrypt args since the original filename will be used
+- File Extension argument are ignored for -d/decrypt args since [the original filename will be used](https://github.com/kntjspr/Citadel#features)
 
 ### Encrypting File Example:
 Citadel.exe C:\DecryptedFolder\file.exe C:\EncryptedFolder -e password7737 cit
 
-- Output sample: C:\EncryptedFolder\dbcsiwpqen.cit
+- Output sample: C:\EncryptedFolder\\[dbcsiwpqen.cit](https://github.com/kntjspr/Citadel#other-info)
 
 ### Decrypting File Example:
 Citadel.exe C:\EncryptedFolder\dbcsiwpqen.cit C:\DecryptedFolder -d password7737
