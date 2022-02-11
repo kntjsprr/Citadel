@@ -17,7 +17,7 @@ This tool doesn't need any user interaction on the CLI (like console.read). You'
 
 ## Arguments
 
-Citadel.exe [file you wish to encrypt/decrypt]  [path to the directory in which the result will be saved] [-e/-d (encrypt/decrypt)] [password (optional)] [extension file (optional)]
+Citadel.exe [file you wish to encrypt/decrypt]  [path to the directory in which the result will be saved] [-e/-d (encrypt/decrypt)] [password (optional)] [File Extension (optional)]
 
 Example:
 Citadel.exe "%temp%\\file.exe" "%temp%" -e password7737 encfile
@@ -30,7 +30,7 @@ If they are left blank, the pre-defined default values will be used.
 
 Password = "citadel0000Encrypt#!%@#"
 
-Extension file = ".enc"
+File Extension = ".enc"
 
 ## Other Info
 - File names are randomized and they will be printed on the cli. I might add a feature to use a predetermined file names.
