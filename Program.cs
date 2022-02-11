@@ -19,7 +19,8 @@ namespace Citadel
             CitadelMain.Mode conversionMode;
             string defaultKey = "citadel0000Encrypt#!%@#"; //Change this value to change the defaultKey.
             #endregion
-
+            Console.WriteLine("Citadel v1.0.3");
+            Console.WriteLine("https://github.com/kntjspr/Citadel");
              /*       Other variable used      
              * filePath and fileName used to split fullPath (Currently not used. Initially created to implement predetermined filenames.)
              * Length starts with 1 but array start with 0  */
