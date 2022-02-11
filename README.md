@@ -1,5 +1,5 @@
 # Citadel
-A simple command-line utility for encrypting files with the AES-256-GCM algorithm and then converting them to base64 format. 
+A simple command-line utility for encrypting files using the AES-256-GCM algorithm and then converting them into a base64 format. 
 
 ## Features
 - Encrypt any file using AES-256-GCM algorithm and then encoding it into a base64 format.
