@@ -24,12 +24,12 @@ Citadel.exe [file you wish to encrypt/decrypt]  [path to the directory in which 
 ### Encrypting File Example:
 Citadel.exe C:\DecryptedFolder\file.exe C:\EncryptedFolder -e password7737 cit
 
-Output sample: C:\EncryptedFolder\dbcsiwpqen.cit
+- Output sample: C:\EncryptedFolder\dbcsiwpqen.cit
 
 ### Decrypting File Example:
 Citadel.exe C:\EncryptedFolder\dbcsiwpqen.cit C:\DecryptedFolder -d password7737
 
-Output sample: C:\DecryptedFolder\file.exe
+- Output sample: C:\DecryptedFolder\file.exe
 
 ## Default Values
 The last two arguments are optional.
