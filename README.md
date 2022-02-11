@@ -47,7 +47,9 @@ File Extension = ".enc"
 
 ## Features to add
 - Option to choose your own encrypted output filename and file extension
-- Ability to select multiple files/folder to encrypt at once. (You can choose to encrypt them one by one or to repack them into a one zip file).
+- Ability to select multiple files/folder to encrypt at once. 
+
+(You can choose to encrypt them one by one or to repack them into a one zip file).
 
 ## Troubleshoot
 For runtime problems install [.NET 5.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) 
