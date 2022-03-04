@@ -17,7 +17,7 @@ This tool doesn't need any user interaction on the CLI. You'll just have to pass
 
 ## Arguments
 
-Citadel.exe [file you wish to encrypt/decrypt]  [path to the directory in which the result will be saved] [-e/-d (encrypt/decrypt)] [password (optional)] [File Extension (Optional)] 
+Citadel.exe [path of the file you wish to encrypt/decrypt]  [path to the directory in which the result will be saved] [-e/-d (encrypt/decrypt)] [password (optional)] [File Extension (Optional)] 
 
 - File Extension argument are ignored for -d/decrypt args since [the original filename will be used](https://github.com/kntjspr/Citadel#features)
 
