@@ -13,7 +13,7 @@ A simple command-line utility for encrypting files using the AES-256-GCM algorit
 
 
 ## How to use
-This tool doesn't need any user interaction on the CLI (like console.read). You'll just have to pass the arguments on the exe file.
+This tool doesn't need any user interaction on the CLI. You'll just have to pass the arguments on the exe file.
 
 ## Arguments
 
