@@ -17,9 +17,9 @@ namespace Citadel
             string encryptionKey, extension;
             byte[] encryptionKeyBytes;
             CitadelMain.Mode conversionMode;
-            string defaultKey = "citadel0000Encrypt#!%@#"; //Change this value to change the defaultKey.
+            string defaultKey = "y2J7gj+=fkN-g&h7"; 
             #endregion
-            Console.WriteLine("Citadel v1.0.3");
+            Console.WriteLine("Citadel v1.0.4");
             Console.WriteLine("https://github.com/kntjspr/Citadel");
              /*       Other variable used      
              * filePath and fileName used to split fullPath (Currently not used. Initially created to implement predetermined filenames.)
@@ -31,18 +31,10 @@ namespace Citadel
             } else if (args[0] == "-h") {
                 Console.WriteLine("\nShowing Help (1/1): ");
                 Console.WriteLine("=======================\n");
-                Console.WriteLine("Args Guidelines:\n\n 1st: [the path of the file you wish to modify] \n 2nd: [folder where your file will be saved] \n 3rd: [-e to encrypt/-d to decrypt] \n 4th: [encryption key (optional)] \n 5th: [file extension (optional)]\n\n");
+                Console.WriteLine("Args: [the path of the file you wish to modify] [folder where your file will be saved] [-e to encrypt/-d to decrypt]  [encryption key (optional)]  [file extension (optional)]\n\n");
                 Console.WriteLine("Example args : Citadel.exe \"%temp%\\filetomodify.exe %temp%\\FolderToSave\" -e  secretpasswordencr33 exe");
                 Console.WriteLine("This one uses the full args, password set to \"secretpasswordencr33\" and extension to \".exe\"");
-                Console.WriteLine("=======================\n\n");
-                Console.WriteLine("Example args #2: Citadel.exe \"%temp%\\filetomodify.exe %temp%\\FolderToSave\" -e \"\" exe ");
-                Console.WriteLine("This one uses uses the default password by putting empty strings.");
-                Console.WriteLine("=======================\n\n");
-                Console.WriteLine("Example args #3: Citadel.exe \"%temp%\\filetomodify.exe %temp%\\FolderToSave\" -e ");
-                Console.WriteLine("This one uses the uses the default password and extension.");
-                Console.WriteLine("=======================\n\n");
-                Console.WriteLine("Default Password if 3rd arg left blank: " + defaultKey);
-                Console.WriteLine("Use empty quotes to bypass an optional argument.");
+                Console.WriteLine("https://github.com/kntjspr/Citadel/blob/main/README.md");
                 return;
             }
 
@@ -53,8 +45,6 @@ namespace Citadel
                 Console.WriteLine("No command specified whether to encrypt or decrypt. Use -h for help.");
                 return;
             }
-
-            /* Since the args are not empty. Let's assign them and check if they are valid.*/
 
             string fullPath = @args[0];
             string savePath = @args[1]; 
@@ -93,16 +83,17 @@ namespace Citadel
             }
             
             if (args.Length < 4){
-                extension = "enc"; //File extension of the encrypted file
+                extension = "enc"; 
             } else {
                 extension = @args[4];
             }
 
-           /* Separate full path into a directory and file name. Not used/referenced at this moment*/
-            Regex rxPattern = new Regex(@"[^\\\\]*$"); // Regex pattern to use
-            Match rx = rxPattern.Match(fullPath); //Match fileName pattern to fullpath and put it into a variable named fileName
-            string filePath = Regex.Replace(fullPath, rx.Value, ""); //Remove fileName value and name it to a var named filePath
-            string fileName = rx.Value;
+           /* Separate full path into a directory and file name. Not used/referenced at this moment
+           *
+           * Regex rxPattern = new Regex(@"[^\\\\]*$"); // Regex pattern to use
+           * Match rx = rxPattern.Match(fullPath); //Match fileName pattern to fullpath and put it into a variable named fileName
+           * string filePath = Regex.Replace(fullPath, rx.Value, ""); //Remove fileName value and name it to a var named filePath
+           * string fileName = rx.Value; */
 
             using (SHA256Managed SHA256 = new SHA256Managed())
                 encryptionKeyBytes = SHA256.ComputeHash(Encoding.UTF8.GetBytes(encryptionKey));
