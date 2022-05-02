@@ -20,12 +20,12 @@ This tool doesn't need any user interaction on the CLI. You'll just have to pass
 Citadel.exe [path of the file you wish to encrypt/decrypt]  [path to the directory in which the result will be saved] [-e/-d (encrypt/decrypt)] [password (optional)] [File Extension (Optional)] 
 
 ### Encrypting file example:
-``Citadel.exe C:\path-to-file-encrypt\unencryptedFile.exe "C:\path-to-encrypted-file-output" -e my-password ext``
+``Citadel.exe "C:\path-to-file-encrypt\unencryptedFile.exe" "C:\path-to-encrypted-file-output" -e my-password ext``
 
 - Output sample: C:\path-to-encrypted-file-output\\[dbcsiwpqen.ext](https://github.com/kntjspr/Citadel#other-info)
 
 ### Decrypting file example:
-``Citadel.exe C:\path-to-encrypted-file\dbcsiwpqen.cit C:\decrypted-output -d my-password``
+``Citadel.exe "C:\path-to-encrypted-file\dbcsiwpqen.cit" "C:\decrypted-output" -d my-password``
 
 - Output sample: `C:\decrypted-output\unencryptedFile.exe`
 
