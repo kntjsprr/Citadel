@@ -25,7 +25,7 @@ Citadel.exe [path of the file you wish to encrypt/decrypt]  [path to the directo
 - Output sample: C:\path-to-encrypted-file-output\\[dbcsiwpqen.ext](https://github.com/kntjspr/Citadel#other-info)
 
 ### Decrypting file example:
-``Citadel.exe "C:\path-to-encrypted-file\dbcsiwpqen.cit" "C:\decrypted-output" -d my-password``
+``Citadel.exe "C:\path-to-encrypted-file\dbcsiwpqen.ext" "C:\decrypted-output" -d my-password``
 
 - Output sample: `C:\decrypted-output\unencryptedFile.exe`
 
