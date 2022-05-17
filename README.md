@@ -1,10 +1,10 @@
 # Citadel
-A simple command-line utility for encrypting files using the AES-256-GCM algorithm and then converting them into a base64 format. 
+A simple command-line utility for encrypting files using the AES-256-GCM algorithm and then encode them into a base64 format. 
 
 ## Features
 - Encrypt any file using the AES-256-GCM algorithm and then encoding it into a base64 format.
-- The original filename is included in the encrypted file and may be changed without affecting the original file. 
-- Everything can be done using args! You can integrate this using your own app easily using cmd.
+- The original filenames data are stored in the encrypted files! You rename the encrypted file but it will automatically goes back into the original filename when decrypted.
+- Everything can be done using args! No more GUI for efficient process.
 
 ## File structure
 - Chunk size can be modified on ```CitadelMain.cs```
